@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Rental System</title>
+	<style>
+		body {
+			background-color: black;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			padding: 0;
+		}
+
+		form {
+			background-color: rgb(0, 0, 0);
+            color: #00ff77;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+		}
+
+		input[type=text], input[type=password] {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			margin-bottom: 10px;
+		}
+
+		input[type=button] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type=button]:hover {
+			background-color: #3e8e41;
+		}
+
+		/* Add this new CSS rule */
+		form:last-of-type {
+			display: inline-block;
+			margin-left: 20px;
+		}
+	</style>
+</head>
+<body>
+	<form id="login-form" action="Car.html">
+		<h2>Login</h2>
+		<input type="text" placeholder="Username" name="username" required>
+		<input type="password" placeholder="Password" name="password" required>
+		<input type="button" value="Login" onclick="submitForm()">
+	</form>
+	<form>
+		<input type="submit" value="Logout">
+	</form>
+	<script>
+		function submitForm() {
+			document.getElementById("login-form").submit();
+		}
+	</script>
+</body>
+</html>

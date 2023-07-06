@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Enter YouR Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: black
+      }
+      h1 {
+        text-align: center;
+        color: #00ff77;
+      }
+      form {
+        margin: 20px auto;
+        width: 80%;
+        color: #00ff77;
+        max-width: 600px;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: black;
+        color: #00ff77;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background-color: black;
+        color: #00ff77;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>--Enter Your Details--</h1>
+    <form action="thanks.html" method="get">
+    
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="pickup">Pickup Location:</label>
+      <input type="text" id="pickup" name="pickup" required>
+
+      <label for="dropoff">Dropoff Location:</label>
+      <input type="text" id="dropoff" name="dropoff" required>
+
+      <label for="date">Pickup Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="car">Car Type:</label>
+      <select id="car" name="car" required>
+        <option value="">Select Car Type</option>
+        <option value="sedan">Sedan</option>
+        <option value="suv">SUV</option>
+        <option value="hatchback">Hatchback</option>
+      </select>
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
